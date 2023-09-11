@@ -26,4 +26,24 @@ fun main(args: Array<String>){
     println("\t" + oneMillion + " - the type is: " + oneMillion.javaClass)
     println("\t" + threeThousand + " - the type is: " + threeThousand.javaClass)
     println("\t" + creditCardNumber + " - the type is: " + creditCardNumber.javaClass)
+
+
+    val byteNum: Byte = 10              //static type check: OK
+    val intNum: Int = byteNum.toInt()   //explicit conversion: OK
+    val floatNum: Float = byteNum.toFloat()
+    val doubleNum: Double = intNum.toDouble()
+
+    //characters in kotlin
+    val aChar = 'a'			//type inference
+    val bChar: Char = 'b'   //explicitly defining the type
+
+    println("aChar: " + aChar + " - the type is: " + aChar.javaClass)
+    println("bChar: " + bChar + " - the type is: " + bChar.javaClass)
+
+    //booleans in kotlin
+    val aFlag = true
+    val bFlag: Boolean = false
+
+    println("aFlag: " + aFlag + " - the type is: " + aFlag.javaClass)
+    println("bFlag: " + bFlag + " - the type is: " + bFlag.javaClass)
 }
